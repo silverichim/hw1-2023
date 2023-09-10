@@ -1,0 +1,107 @@
+/* Existing reset and global styles stay here */
+
+/* General Body Styles */
+body {
+    margin: 1%;
+    font-size: 125%;
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6; 
+    color: #363636; 
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.1) 0%, rgba(255, 255, 0, 0.1) 33.33%, rgba(0, 0, 255, 0.1) 66.67%, rgba(75, 0, 130, 0.1) 100%);
+}
+
+
+header {
+    background-color: #e6c9a8;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+header nav ol {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+header nav ol li {
+    position: relative;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+header nav ol li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 60%;
+    border-right: 1px solid #000;
+    transform: translateY(-50%);
+}
+/* Active Navigation Style */
+.active {
+    background-color: rgb(0, 0, 0);
+    text-transform: auto;
+    text-align: center;
+    padding: 0px 20px; /* Adding some padding */
+}
+
+.active a {
+    text-decoration: none;
+    color: #ffffff; /* Set a color for your active link */
+}
+
+/* Link Styles */
+a {
+    color: #0066cc; /* Set a base color for your links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover for better user experience */
+}
+
+a:visited {
+    color: red;
+}
+
+/* Main content Styles */
+main {
+    background-color: #fff;
+    border: 3px solid red;
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between main and next element */
+}
+
+main p {
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Image Styles */
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
+    border: 3px solid blue;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 5px;
+    margin-left: 10%;
+}
+.sprout-images {
+    width: auto;
+    height: 150px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fff;
+    border: 3px solid red;
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+}
